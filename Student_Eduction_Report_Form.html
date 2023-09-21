@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>
+Student Performance Form
+</title>
+</head>
+<body>
+<form name="Student details" action="send.php" method="post">
+<table width="600" border="1" cellspacing="2" cellpadding="2">
+<tr>
+<td colspan="2" align="center"><strong>Student Education Report</strong></td> 
+</tr>
+
+<tr>
+<td>First name</td>
+<td><input type="text" name="fname" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>Last name</td>
+<td><input type="text" name="lname" maxlength="30" /></td>
+</tr>
+
+<tr>
+<td>Class Year</td>
+<td><select name="year" />
+<option></option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Student Performance</td>
+<td>
+<select name="performance">
+<option value="A">Excellent</option>
+<option value="B">very good</option>
+<option value="C">good</option>
+<option value="D">Average</option>
+<option value="E">Bad</option>
+
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Interested areas</td>
+<td>
+<input type="checkbox" name="AC" />Academics
+<input type="checkbox" name="IS" />Interpersonal Skills
+<input type="checkbox" name="S" />Sports
+<input type="checkbox" name="A" />Art
+</td>
+</tr>
+
+<tr>
+<td>Student status</td>
+<td>
+<input type="radio" name="P">Pass
+<input type="radio" name="F"> Fail
+</td>
+</tr>
+
+<tr>
+<td>Student's Feedback</td>
+<td>
+<textarea name="comments" cols="50" rows="7"></textarea>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+<input type="submit" name="submit" value="Submit" />
+<input type="reset" name="reset" value="Reset" />
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>
